@@ -1,11 +1,24 @@
-import React from "react";
+import React from 'react';
 
 function Event() {
-  //Create function here
+  function Greeting() {
+    return alert('Hello everyone have a nice day');
+  }
 
   return (
-    // Code Inside div
-    <div></div>
+    <div>
+      <p>
+        If you press <b>Click Here</b> then an alert will appear
+      </p>
+      <button onClick={() => alert('Hello full-stack bootcamp participants')}>
+        Click here
+      </button>
+
+      <p>
+        If you press <b>Greeting</b> then an alert will appear
+      </p>
+      <button onClick={Greeting}>Greeting</button>
+    </div>
   );
 }
 
